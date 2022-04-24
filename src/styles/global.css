@@ -1,0 +1,57 @@
+:root {
+  --color-100: hsl(237, 27%, 10%);
+  --color-150: hsl(237, 27%, 15%);
+  --color-200: hsl(237, 27%, 20%);
+  --color-250: hsl(237, 27%, 25%);
+  --color-300: hsl(237, 27%, 30%);
+  --color-350: hsl(237, 27%, 35%);
+  --color-400: hsl(237, 27%, 40%);
+  --color-450: hsl(237, 27%, 45%);
+  --color-500: hsl(237, 27%, 50%);
+  --color-550: hsl(237, 27%, 55%);
+  --color-600: hsl(237, 27%, 60%);
+  --color-650: hsl(237, 27%, 65%);
+  --color-700: hsl(237, 27%, 70%);
+  --color-750: hsl(237, 27%, 75%);
+  --color-800: hsl(237, 27%, 80%);
+  --color-850: hsl(237, 27%, 85%);
+  --color-900: hsl(237, 27%, 90%);
+  --color-950: hsl(237, 27%, 95%);
+
+
+  --text-100: hsl(220, 10%, 10%);
+  --text-150: hsl(220, 10%, 15%);
+  --text-200: hsl(220, 10%, 20%);
+  --text-250: hsl(220, 10%, 25%);
+  --text-300: hsl(220, 10%, 30%);
+  --text-350: hsl(220, 10%, 35%);
+  --text-400: hsl(220, 10%, 40%);
+  --text-450: hsl(220, 10%, 45%);
+  --text-500: hsl(220, 10%, 50%);
+  --text-550: hsl(220, 10%, 55%);
+  --text-600: hsl(220, 10%, 60%);
+  --text-650: hsl(220, 10%, 65%);
+  --text-700: hsl(220, 10%, 70%);
+  --text-750: hsl(220, 10%, 75%);
+  --text-800: hsl(220, 10%, 80%);
+  --text-850: hsl(220, 10%, 85%);
+  --text-900: hsl(220, 10%, 90%);
+  --text-950: hsl(220, 10%, 95%);
+
+
+  color-scheme: dark;
+  font-size: 18px;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-150);
+}

@@ -1,0 +1,124 @@
+.button {
+  display: inline-block;
+  border: 0;
+  background-color: var(--color-550);
+  border-radius: 6px;
+  padding: 4px 16px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  color: var(--text-700);
+  cursor: pointer;
+  transition: background-color 150ms ease-in, color 150ms ease-in;
+}
+
+.button:hover {
+  background-color: var(--color-700);
+  color: var(--text-850);
+}
+
+.card {
+  background-color: var(--color-250);
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+}
+
+a.card {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 150ms ease-in;
+}
+
+a.card:hover {
+  background-color: var(--color-300);
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
+}
+
+.card > header {
+  height: 40px;
+  display: grid;
+  gap: 0.2rem 1rem;
+  grid-template-columns: 40px auto min-content;
+  grid-template-rows: 20px auto;
+}
+
+.card > header > img {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: var(--color-500);
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.card > header > h3 {
+  align-self: flex-end;
+  grid-column: 2;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #c0c8d8;
+}
+
+.card > header > h5 {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  color: #7888ab;
+}
+
+.card > header > span {
+  grid-column: 3;
+  grid-row: 1 / 2;
+}
+
+.project_nav {
+  height: 100%;
+  width: 100%;
+  max-width: 775px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 1rem;
+}
+
+.project_nav > a {
+  height: 100%;
+  width: 100px;
+  text-align: center;
+  color: var(--text-900);
+  text-decoration: none;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #b3c4e5;
+}
+
+.project_nav > a:global(.active) {
+  background: var(--color-350);
+}
+
+.project_nav > a:hover {
+  background: var(--color-400);
+}
+
+.project_nav > a > img {
+  margin-bottom: 0.5rem;
+}
+
+.project_shelf {
+}
+
+.project_shelf > header > h3 {
+}
+
+.project_shelf > header > .button {
+}
