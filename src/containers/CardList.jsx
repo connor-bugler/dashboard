@@ -3,13 +3,17 @@ import { onSnapshot } from "firebase/firestore";
 import * as layout from "../styles/layout.module.css";
 import Card from "../components/Card";
 
-const defaultRenderState = (doc) => (
+export const defaultRenderState = (doc) => (
   <Card key={doc.id} title={doc.get("Name") || doc.id} />
 );
-export default ({ source, children = defaultRenderState }) => {
+export default ({ source, columns, children = defaultRenderState }) => {
   let [state, setState] = useState([]);
   useEffect(() => {
     onSnapshot(source, (snapshot) => setState(snapshot.docs));
   }, [source]);
-  return <div className={layout.card_list}>{state?.map(children)}</div>;
+  return (
+    <div style={{ "--columns": columns }} className={layout.card_list}>
+      {state?.map(children)}
+    </div>
+  );
 };

@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import layout from "../styles/layout.module.css";
 import logoPNG from "../assets/full-logo.png";
@@ -10,11 +10,12 @@ const placeholderIMG =
 export default () => {
   let params = useParams();
   let { project } = params;
-  console.log("params", params);
 
   return (
     <nav className={layout.navbar}>
-      <img src={logoPNG} />
+      <Link to="/">
+        <img src={logoPNG} />
+      </Link>
 
       {project && <ProjectNav />}
 

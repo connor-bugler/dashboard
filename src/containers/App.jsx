@@ -1,16 +1,20 @@
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./Layout";
-import ProjectsPage from "../pages/Projects";
+import Projects from "../views/Projects";
+import Snapshots from "../views/Snapshots";
+import Branches from "../views/Branches";
+import Reports from "../views/Reports";
 
 export default () => (
   <BrowserRouter>
     <Routes>
-      <Route index element={<ProjectsPage />} />
+      <Route index element={<Projects />} />
 
       <Route path=":project" element={<Layout />}>
-        <Route path="snapshots" element={<h1>Snapshot</h1>} />
-        <Route path="branches" element={<h1>Branches</h1>} />
-        <Route path="reports" element={<h1>Reports</h1>} />
+        <Route path="" element={<Navigate replace to="snapshots" />} />
+        <Route path="snapshots" element={<Snapshots />} />
+        <Route path="branches" element={<Branches />} />
+        <Route path="reports" element={<Reports />} />
       </Route>
     </Routes>
   </BrowserRouter>
